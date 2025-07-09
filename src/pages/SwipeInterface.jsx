@@ -44,6 +44,34 @@ function SwipeInterface() {
     }
   ];
 
+  // Recommended products data
+  const recommendedProducts = [
+    {
+      id: 6,
+      name: "Elegant Evening Dress",
+      price: "$79.99",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCr4o9g4mMXPRCnXEvhRYSb6shz1F33M57Yv65SzCdpPquLU07YfDDklBBQvZKPJSb2fm9g5Bchs3CcuiDIMp2hIVppmnv2HF45AvS08GBLOwIg98_pHXesFAl52hQqQaP6HLiEste22HYmRG3TvpJ7YpDRli8QHysqgUYOaxkyzBp6DhsmZ9prQJrBEBRamkwY54ARU4ERQ9fJjdA8F3Xzk7R0TU3wJsbYwAq5WCdkLyV_OOMiBGXKndh7h6GZo1jATp1_9X7Sodo"
+    },
+    {
+      id: 7,
+      name: "Comfortable Cotton Shirt",
+      price: "$29.99",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuANZunYC4sAzZb7Grgo1zQNyleigOlY76lyocjZJgQTfqQ4JLSn99GM6lLL_FLmAN-_UT1wkGiYdOMQwL2FQ6bdWcp35hBKgvjHNb5oXhU6pBOxwxVeGSwoEpdy3ZDW459m8ZRexDODiRqvLhbZR8LLwbyQPj-Pxn2l2Sj5tmeeKjLFJnfe_3sTSGoDoQoDEx3VYLxP0WEz3Xrp8XewixOcN0WMr2IuBKEjabuUwi0kvyLkr4dIvopZMJqUzAKbFk9CTLf9b3JvAvU"
+    },
+    {
+      id: 8,
+      name: "Minimalist Wall Art",
+      price: "$49.99",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDWwxIU_MS4-O4M2EwfdJQEZy_iJa9lo4NYzjGCy-g3SMZDGtZg4tC1Q-vdl0VudMSbjxdHBvEZtUgP3gYrIELwSjh63U28XyGkN9NEbWny6uM6F23SbH9EG1SvbCP7l41O8E69y2D0wT5QL2LkWTHdYU0CnGxUFD66uypr2hahTkceV78fZWunudkMKvimbQd569UKy2tzEpCLuRgCTDiMbt49ptX_BXFMLHMAPjvG1q9pfIYC5APQZxYN7grr46hKWOF5sEV8a9o"
+    },
+    {
+      id: 9,
+      name: "Smart Coffee Maker",
+      price: "$129.99",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBWPpEKNXjzWGPR-PRrgYB_I_Nes02d5KFZo9vWqXY-z3uQ_ZKvZwKmSmzP-b6GdfqNJaFI41UC1YnzS-UarV190wfGeVGAV-TMM7scW6EMuKNx8YFFA4oauzsmVyVjcewwkLwbmT-Pbfna7ItoXtDQ2nif3A8VLK5JBKuUslNk6KkXPbWJy90xLol9t7AL13asJcYH3N4ZXR9aVyXl_z_1_iHgH4xuUrhrwLuEhkixZgfkLvALQ-P5LjJt3X0QDqbDbUJiTP2pTss"
+    }
+  ];
+
   // Get current index from location state or default to 0
   const [currentIndex, setCurrentIndex] = useState(location.state?.currentIndex || 0);
   const [totalSwipes, setTotalSwipes] = useState(0);
@@ -189,6 +217,26 @@ function SwipeInterface() {
             <p className="text-[#637c88] text-sm font-normal leading-normal pb-3 pt-1 px-4 text-center">
               {totalSwipes} swipes • {totalLikes} likes
             </p>
+
+            {/* Added Recommended Section */}
+            <h2 className="text-[#111518] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Recommended for You</h2>
+            <div className="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+              <div className="flex items-stretch p-4 gap-3">
+                {recommendedProducts.map((product) => (
+                  <div key={product.id} className="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-40">
+                    <div
+                      className="w-full bg-center bg-no-repeat aspect-[3/4] bg-cover rounded-xl flex flex-col cursor-pointer hover:shadow-md transition-all duration-300"
+                      style={{ backgroundImage: `url(${product.image})` }}
+                      onClick={() => handleProductClick(product.id)}
+                    ></div>
+                    <div>
+                      <p className="text-[#111518] text-base font-medium leading-normal">{product.name}</p>
+                      <p className="text-[#637c88] text-sm font-normal leading-normal">{product.price}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

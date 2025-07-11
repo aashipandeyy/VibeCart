@@ -1,0 +1,12 @@
+torch>=2.0
+torchvision
+transformers>=4.40.0
+pandas
+numpy
+requests
+Pillow
+faiss-cpu
+flask
+flask-cors
+tqdm
+

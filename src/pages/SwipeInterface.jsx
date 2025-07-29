@@ -105,7 +105,7 @@ function SwipeInterface() {
         <header className="flex bg-blue-700 items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-5">
           <div className="flex items-center gap-8">
             <Link to="/" className="flex items-center gap-4 text-[#111518]">
-              <h2 className="text-[#ffc220] text-2xl font-bold leading-tight tracking-[-0.015em]">Walmart X ShopSwipe</h2>
+              <h2 className="text-[#ffc220] text-2xl font-bold leading-tight tracking-[-0.015em]">VibeCart</h2>
             </Link>
             <div className="flex items-center gap-6">
               <Link to="/" className="text-white text-m font-semibold leading-normal hover:text-[#ffc220]">Home</Link>

@@ -9,7 +9,7 @@ const AccountSettings = () => {
           <div className="flex items-center gap-8">
             {/* Logo linking to home */}
             <Link to="/" className="flex items-center gap-4 text-[#111518]">
-              <h2 className="text-[#ffc220] text-2xl font-bold leading-tight tracking-[-0.015em]">Walmart X ShopSwipe</h2>
+              <h2 className="text-[#ffc220] text-2xl font-bold leading-tight tracking-[-0.015em]">VibeCart</h2>
             </Link>
             <div className="flex items-center gap-6">
                 <Link to="/" className="text-white text-m font-semibold leading-normal hover:text-[#ffc220]">Home</Link>

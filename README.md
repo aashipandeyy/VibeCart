@@ -1,20 +1,23 @@
-# 🛍️ Sparkathon || ShopSwipe
+# 🛍️ VibeCart – Personalized Product Recommender
 
-**ShopSwipe** is a swipe-based shopping app that personalizes product recommendations based on your vibe. As users swipe through products, the app learns their preferences and curates suggestions to match their taste.
+**VibeCart** is a minimal, responsive shopping app that recommends products based on your personal taste.  
+Instead of swiping, users can **like** or **skip** products, helping the app learn their preferences to serve more tailored suggestions in future sessions.
+
+This project is frontend-heavy and built using **React**, **Tailwind CSS**, **HTML**, and **JavaScript**. It is designed to be clean, intuitive, and extensible — ready for future integration with an ML recommendation model.
 
 ---
 
 ## ⚡ Features
 
-- Like or skip products  
-- AI-powered personalized recommendations  
-- “Discover My Vibe” mode for quick onboarding
+- ❤️ Like / ❌ Skip interface for product discovery  
+- 🎯 Dynamic UI that adapts based on your preferences  
+- 🧠 Future-ready structure for integrating AI/ML-based recommendations  
 
 ---
 
 ## 🚀 Getting Started
 
-To run the app locally:
+To run the project locally:
 
 ```bash
 git clone https://github.com/your-username/Sparkathon.git

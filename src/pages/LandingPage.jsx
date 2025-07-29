@@ -184,12 +184,6 @@ function LandingPage() {
       <footer className="flex justify-center">
         <div className="flex max-w-[960px] flex-1 flex-col">
           <footer className="flex flex-col gap-6 px-5 py-10 text-center @container">
-            <div className="flex flex-wrap items-center justify-center gap-6 @[480px]:flex-row @[480px]:justify-around">
-              <Link to="/about" className="text-[#637c88] text-base font-normal leading-normal min-w-40">About Us</Link>
-              <Link to="/contact" className="text-[#637c88] text-base font-normal leading-normal min-w-40">Contact</Link>
-              <Link to="/privacy" className="text-[#637c88] text-base font-normal leading-normal min-w-40">Privacy Policy</Link>
-              <Link to="/terms" className="text-[#637c88] text-base font-normal leading-normal min-w-40">Terms of Service</Link>
-            </div>
             <div className="flex flex-wrap justify-center gap-4">
               <a href="" aria-label="Twitter">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" fill="#637c88" viewBox="0 0 256 256">
@@ -207,7 +201,6 @@ function LandingPage() {
                 </svg>
               </a>
             </div>
-            <p className="text-[#637c88] text-base font-normal leading-normal">@2024 ShopSwipe. All rights reserved.</p>
           </footer>
         </div>
       </footer>

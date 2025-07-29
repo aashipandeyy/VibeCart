@@ -39,6 +39,6 @@ Replace `your-username` with your actual GitHub username in the clone URL.
 
 ```bash
 git add README.md
-git commit -m "Update custom README for VibeCart"
+git commit -m "Message"
 git push
 ```

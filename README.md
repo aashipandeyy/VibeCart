@@ -20,8 +20,8 @@ This project is frontend-heavy and built using **React**, **Tailwind CSS**, **HT
 To run the project locally:
 
 ```bash
-git clone https://github.com/your-username/Sparkathon.git
-cd shop-swipe
+git clone https://github.com/your-username/VibeCart.git
+cd vibe-cart
 npm install
 npm start
 ```
@@ -39,6 +39,6 @@ Replace `your-username` with your actual GitHub username in the clone URL.
 
 ```bash
 git add README.md
-git commit -m "Update custom README for ShopSwipe"
+git commit -m "Update custom README for VibeCart"
 git push
 ```

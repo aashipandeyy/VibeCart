@@ -1,4 +1,4 @@
-# 🛍️ VibeCart – Personalized Product Recommender
+# VibeCart – Personalized Product Recommender
 
 **VibeCart** is a minimal, responsive shopping app that recommends products based on your personal taste.  
 Instead of swiping, users can **like** or **skip** products, helping the app learn their preferences to serve more tailored suggestions in future sessions.
@@ -9,13 +9,13 @@ This project is frontend-heavy and built using **React**, **Tailwind CSS**, **HT
 
 ## ⚡ Features
 
-- ❤️ Like / ❌ Skip interface for product discovery  
-- 🎯 Dynamic UI that adapts based on your preferences  
-- 🧠 Future-ready structure for integrating AI/ML-based recommendations  
+- Like / Skip interface for product discovery  
+- Dynamic UI that adapts based on your preferences  
+- Future-ready structure for integrating AI/ML-based recommendations  
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 To run the project locally:
 
@@ -29,7 +29,7 @@ npm start
 
 Replace `your-username` with your actual GitHub username in the clone URL.
 
-### 📌 Steps to edit:
+### Steps to edit:
 
 1. Open your project in VS Code (or any editor).
 2. Open the `README.md` file from the root.

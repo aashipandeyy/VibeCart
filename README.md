@@ -7,7 +7,7 @@ This project is frontend-heavy and built using **React**, **Tailwind CSS**, **HT
 
 ---
 
-## ⚡ Features
+## Features
 
 - Like / Skip interface for product discovery  
 - Dynamic UI that adapts based on your preferences  
